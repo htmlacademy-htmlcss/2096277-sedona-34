@@ -52,16 +52,18 @@
 <main class="main-inner">
     <header class="hotel-parameters">
         <h1 class="hotels-sedona">Гостиницы Седоны</h1>
-    <ul class="breadcrumbs">
+     <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-<a class="breadcrumbs-link" href="index.html">
-    Главная
-</a>
+       <a class="breadcrumbs-link" href="index.html">
+       Главная
+       </a>
         </li>
         <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">
                 Гостинницы
             </a>
+            </li>
+     </ul>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-infrastructure">
                    <legend class="catalog-filter-title">
@@ -116,11 +118,10 @@
                 <button class="button" type="submit">
                     Применить
                 </button>
+                <button class="reset" type="reset">
+                    Сбросить
+                </button>
             </form>
-           
-    
-    
-    
     </header>
     <h2 class="resault">найдено гостиниц:</h2>
  <select class="select-control" aria-label="Сортировка">
@@ -146,6 +147,13 @@
                 <b class="product-card-price">гостинница от 4000 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
                 <a class="product-card-basket button" href="#">В избранное</a>
+                <div class="rating-result">
+                    <span class="star">1</span>	
+                    <span class="star">1</span>    
+                    <span class="star">1</span>  
+                    <span class="star">1</span>    
+                    <span></span>
+                </div>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -154,7 +162,14 @@
                 </a>
                 <b class="product-card-price">гостинница от 5000 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
-                <a class="product-card-basket button" href="#" checked>В избранное</a>
+                <a class="product-card-basket button" href="#">В избранное</a>
+                <div class="rating-result">
+                    <span class="star">1</span>	
+                    <span class="star">1</span>    
+                    <span class="star">1</span>  
+                    <span class="star">1</span>    
+                    <span></span>
+                </div>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -164,6 +179,13 @@
                 <b class="product-card-price">гостинница от 2500 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
                 <a class="product-card-basket button" href="#">В избранное</a>
+                <div class="rating-result">
+                    <span class="star">1</span>	
+                    <span class="star">1</span>    
+                    <span class="star">1</span>  
+                    <span></span>    
+                    <span></span>
+                </div>
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
@@ -173,6 +195,13 @@
                 <b class="product-card-price">гостинница от 1500 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
                 <a class="product-card-basket button" href="#">В избранное</a>
+                <div class="rating-result">
+                    <span class="star">1</span>	
+                    <span class="star">1</span>    
+                    <span ></span>  
+                    <span></span>    
+                    <span></span>
+                </div>
             </li>
             </ul>
             <ul class="pagination>">
@@ -189,7 +218,7 @@
                     <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">...</a>
+                    <button class="button pagination-show-more">...</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
@@ -237,16 +266,16 @@
             <ul class="links">
                 <li class="vk">
                     <a href="vk.ru">
-                        <img src="#">
+                        <img src="#" alt="Значек вконтакте">
                     </a></li><!--we can include a into li
               also we-->
                 <li class="telegramm">
                     <a href="telegram.org">
-                  <img src="#">
+                  <img src="#" alt="Значек телеграмм">
               </a></li>
                 <li class="youtube">
                     <a href="youtube.com">
-                  <img src="#">
+                  <img src="#" alt="Значек ютуб">
               </a></li>
             </ul>
           <address class="footer-contact-address">
