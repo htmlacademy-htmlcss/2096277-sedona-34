@@ -52,6 +52,11 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.page-header-catalog {
+    background-image: url("../images/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
 .footer-picture {
     background-size: 100% auto;
 }
@@ -127,6 +132,7 @@ a[href^="tel:"] {
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
+    text-decoration: none;
     color: #FFFFFF;
 }
 .want-here {
@@ -153,4 +159,63 @@ line-height: 21px;
     background-image: url("../images/background-footer.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+.hotels-sedona {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;  
+    color: #FFFFFF;
+}
+.product-card-basket {
+    background: #82B3D3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.rate {
+    background: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.reset {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: none;
+}
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;   
+}
+.product-card-price, .hotel-on-the-page {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;  
+    color: #FFFFFF;
+}
+.pagination-link, .pagination-show-more {
+background: #82B3D3;
+border: 1px solid #82B3D3;
+border-radius: 4px;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+text-decoration: none;
 }
