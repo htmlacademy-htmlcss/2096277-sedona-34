@@ -6,12 +6,12 @@
         <title>Каталог</title>
     </head>
     <body>
-        <header class="page-header">
+        <header class="header-navigation">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
                     <img class="page-header-logo" alt="Логотип Седоны" src="images/logo.svg" width="139" height="70">
                 </a>
-                <ul class="main-menu">
+                <ul class="main-menu" type="none">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="index.html">Главная</a>
                     </li>
@@ -24,35 +24,28 @@
                         <a class="navigation-link navigation-link-current" href="catalog.html">Гостинницы</a>
                     </li>
                 </ul>
-                <ul class="main-menu menu-user">
+                <ul class="main-menu menu-user" type="none">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Поиск
-                            </span>
-                            <img class="search" alt="Поиск" src="images/search.svg" width:18.05px height:18.1px>
+                            
+                            <img class="search" alt="Поиск" src="images/search.svg" width:18px height:18px>
                         </a>
                     </li>
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Корзина
-                            </span>
-                            <img class="basket" alt="Логотип Седоны" src="images/favorite.svg" width:18.05px height:17px>
+                            <img class="basket" alt="сердечко" src="images/favorite.svg" width:18px height:17px>
                         </a>
                     </li>
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Хочу сюда!
-                            </span>
+                            <button class="want-here">Хочу сюда!</button>  
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
 <main class="main-inner">
-    <header class="hotel-parameters">
+    <header class="page-header">
         <h1 class="hotels-sedona">Гостиницы Седоны</h1>
      <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -141,7 +134,7 @@
             <ul class="product-list">
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-1.jpg" width="300" height="211" alt="звездное небо">
+                    <img class="product-card-img" src="images/hoteles/hotel-first.jpg" width="300" height="211" alt="звездное небо">
                     <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
                 <b class="product-card-price">гостинница от 4000 р</b>
@@ -158,7 +151,7 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-2.jpg" width="300" height="211" alt="звездное небо и горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-second.jpg" width="300" height="211" alt="звездное небо и горы">
                     <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <b class="product-card-price">гостинница от 5000 р</b>
@@ -175,7 +168,7 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-3.jpg" width="300" height="211"alt="звездное небо через горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-third.jpg" width="300" height="211"alt="звездное небо через горы">
                     <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 2500 р</b>
@@ -192,7 +185,7 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-4.jpg" width: 300px height: 211px alt="звездное небо сквозь горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-fourth.jpg" width: 300px height: 211px alt="звездное небо сквозь горы">
                     <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 1500 р</b>
@@ -279,10 +272,12 @@
               </a></li>
             </ul>
           <address class="footer-contact-address">
-            <a class="footer-contact-address-phone" href="tel:+78128121212">+7(812)812-12-12</a>
+            <a class="footer-contact-address-phone" href="tel:+78128121212">
+                <img class="phone-number" src="images/phone-icon.svg" width="327" height="38" alt="88128121212">
+                +7(812)812-12-12</a>
           </address>
           <a class="link-html-academy" href="https://htmlacademy.ru">
-              .html<br>academy
+            <img src="images/html-academy.svg"  width="115" height="33" alt="html academy">
           </a>
           </footer>
     </body>
