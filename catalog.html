@@ -6,12 +6,12 @@
         <title>Каталог</title>
     </head>
     <body>
-        <header class="page-header">
+        <header class="header-navigation">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
                     <img class="page-header-logo" alt="Логотип Седоны" src="images/logo.svg" width="139" height="70">
                 </a>
-                <ul class="main-menu">
+                <ul class="main-menu" type="none">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="index.html">Главная</a>
                     </li>
@@ -24,42 +24,33 @@
                         <a class="navigation-link navigation-link-current" href="catalog.html">Гостинницы</a>
                     </li>
                 </ul>
-                <ul class="main-menu menu-user">
+                <ul class="main-menu menu-user" type="none">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Поиск
-                            </span>
-                            <img class="search" alt="Поиск" src="images/search.svg" width:18.05px height:18.1px>
+                            
+                            <img class="search" alt="Поиск" src="images/search.svg" width:18px height:18px>
                         </a>
                     </li>
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Корзина
-                            </span>
-                            <img class="basket" alt="Логотип Седоны" src="images/favorite.svg" width:18.05px height:17px>
+                            <img class="basket" alt="сердечко" src="images/favorite.svg" width:18px height:17px>
                         </a>
                     </li>
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <span class="visually-hidden">
-                                Хочу сюда!
-                            </span>
+                            <button class="want-here">Хочу сюда!</button>  
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
 <main class="main-inner">
-    <header class="hotel-parameters">
+    <header class="page-header-catalog">
         <h1 class="hotels-sedona">Гостиницы Седоны</h1>
-     <ul class="breadcrumbs">
+     <div class="breadcrumbs">
         <li class="breadcrumbs-item">
        <a class="breadcrumbs-link" href="index.html">
         <img class="breadcrumbers" src="images/breadcrumbers.svg" alt="хлебные крошки">
-        <img class="breadcrumbs-image" src="images/arrow.svg" width:5.11px height:7.95px; alt="стрелочка">
-       Главная
        </a>
         </li>
         <li class="breadcrumbs-item">
@@ -67,7 +58,7 @@
                 Гостинницы
             </a>
             </li>
-     </ul>
+        </div>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-infrastructure">
                    <legend class="catalog-filter-title">
@@ -129,24 +120,24 @@
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#" class="button button-black">
-                <span class="visually-hidden">Показать карточки</span>
+            <a href="#" class="button-black">
+                <img class="mini-table" src="images/table.svg" width: 48px height: 48px alt="показать карточки">
             </a>
-            <a href="#" class="button button-monitor">
-                <span class="visually-hidden">Показать экран?</span>
+            <a href="#" class="button-monitor">
+                <img class="monitor" src="images/monitor.svg" width: 48px height: 48px alt="показать экран">
             </a>
-            <a href="#" class="button button-list">
-                <span class="visually-hidden">Показать список</span>
+            <a href="#" class="button-list">
+                <img class="mini-list" src="images/mini-list.svg" width: 48px height: 48px alt="показать список">
             </a>
             <ul class="product-list">
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-1.jpg" width="300" height="211" alt="звездное небо">
+                    <img class="product-card-img" src="images/hoteles/hotel-first.jpg" width="300" height="211" alt="звездное небо">
                     <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
                 <b class="product-card-price">гостинница от 4000 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
-                <a class="product-card-basket button" href="#">В избранное</a>
+                <a class="button product-card-basket" href="#">В избранное</a>
                 <div class="rating-result">
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>	
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>    
@@ -158,12 +149,12 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-2.jpg" width="300" height="211" alt="звездное небо и горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-second.jpg" width="300" height="211" alt="звездное небо и горы">
                     <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <b class="product-card-price">гостинница от 5000 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
-                <a class="product-card-basket button" href="#">В избранное</a>
+                <a class="button product-card-basket" href="#">В избранное</a>
                 <div class="rating-result">
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>	
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>    
@@ -175,12 +166,12 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-3.jpg" width="300" height="211"alt="звездное небо через горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-third.jpg" width="300" height="211"alt="звездное небо через горы">
                     <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 2500 р</b>
                 <a class="product-card-information button" href="#">Подробнее</a>
-                <a class="product-card-basket button" href="#">В избранное</a>
+                <a class="button product-card-basket" href="#">В избранное</a>
                 <div class="rating-result">
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>	
                     <span class="star"><img class="star" alt="звездочка" src="images/star.svg" width="18" height="17"></span>    
@@ -192,7 +183,7 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-4.jpg" width: 300px height: 211px alt="звездное небо сквозь горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-fourth.jpg" width: 300px height: 211px alt="звездное небо сквозь горы">
                     <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 1500 р</b>
@@ -222,7 +213,7 @@
                     <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                    <button class="button pagination-show-more">...</button>
+                    <a class="pagination-show-more">...</a>
                 </li>
                 <li class="pagination-item">
                     <a class="pagination-link" href="#">10</a>
@@ -255,11 +246,11 @@
         <p class="mailing-discription">
             Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-           <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
-           <label></label> 
-        <input type="text" name="mail" value="Ваш Email">
-        <input type="submit" value="Подписаться на рассылку">
-           </form>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
+            <label></label> 
+              <input type="email" name="mail" value="Ваш Email" class="email">
+              <button type="submit" value="Подписаться на рассылку" class="submission">Подписаться</button>
+            </form>
         </section>
 </main>
         <footer class="page-footer">
@@ -278,11 +269,10 @@
                   <img src="images/references/youtube.svg" width="22" height="17" alt="Значек ютуб">
               </a></li>
             </ul>
-          <address class="footer-contact-address">
-            <a class="footer-contact-address-phone" href="tel:+78128121212">+7(812)812-12-12</a>
-          </address>
+            <a class="footer-contact-address-phone" href="tel:+78128121212">
+                +7(812)812-12-12</a>
           <a class="link-html-academy" href="https://htmlacademy.ru">
-              .html<br>academy
+            <img src="images/html-academy.svg"  width="115" height="33" alt="html academy">
           </a>
           </footer>
     </body>
