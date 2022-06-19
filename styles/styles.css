@@ -60,7 +60,7 @@ body {
 .container-header {
     display: inline;
 }
-.navigatoion {
+.navigation {
     display: flex;
     width: 1200px;
     margin: 0 auto;
@@ -72,6 +72,9 @@ body {
     padding: 0;
 }
 
+.header-navigation {
+
+}
 .menu-navigation {
     width: 390px;
 }
@@ -92,7 +95,8 @@ body {
 }
 
 .footer-picture {
-    flex-direction: row-reverse;
+    
+    background-size: 100% auto;
 }
 
 .services-item {
@@ -102,9 +106,6 @@ body {
     padding: 0;
     text-align: center;
     color:#000000;
-}
-.footer-picture {
-    background-size: 100% auto;
 }
 
 .advanteges-list {
@@ -190,6 +191,8 @@ text-align: center;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 .booking {
@@ -204,6 +207,7 @@ a[href^="tel:"] {
     text-transform: uppercase;
     text-decoration-line: none;
     color: #000000;
+   
 }
 
 .button {
@@ -232,11 +236,14 @@ a[href^="tel:"] {
     line-height: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    border-radius: 0px 10px 10px 0;
+    text-align: center;
 }
 
 .email {
     font-size: 18px;
     line-height: 21px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .mailing {
@@ -253,11 +260,19 @@ a[href^="tel:"] {
 }
 
 .product-card-basket {
+    width: 140px;
     background: #82B3D3;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.mailing-discription {  
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -267,6 +282,7 @@ a[href^="tel:"] {
     line-height: 20px;
     text-transform: uppercase;
     color: #333333;
+    margin-left: auto;
 }
 
 .reset {
@@ -314,5 +330,75 @@ a[href^="tel:"] {
 
 .container {
     margin: 0 auto;
-    width: 960px;
+    width: 1200px;
+}
+
+.page-footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    width: 142px;
+    margin-right: 196px
+}
+
+.linkses {
+    margin-right: 13px;
+}
+
+.link-html-academy {
+    margin-left: auto;
+}
+
+.product-list {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-right: 58px;
+}
+
+.resoult {
+    width: 700px;
+  
+}
+
+.select-control {
+    width: 287px;  
+    margin-left: 191px;
+}
+
+.sort {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    width: 160px;
+    margin-left: 81px;
+}
+
+.product-card-information {
+    width: 140px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.container-pagination {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    margin-right: 300px;
 }
