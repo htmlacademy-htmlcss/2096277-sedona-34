@@ -1,0 +1,404 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    width: 100%;
+    background-color: #FFFFFF;
+    
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.page-header {
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.page-header-catalog {
+    background-image: url("../images/background-catalog.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.main-container {
+    display: flex;
+
+    flex-grow: 1;
+}
+.container-header {
+    display: inline;
+}
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-navigation {
+
+}
+.menu-navigation {
+    width: 390px;
+}
+
+.menu-user {
+    width: 264px;
+    margin-left: auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-img, .logo-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-picture {
+    
+    background-size: 100% auto;
+}
+
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:#000000;
+}
+
+.advanteges-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.description-1 {
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.description-2 {
+font-size: 22px;
+line-height: 26px;
+color: #333333;
+text-align: center;
+}
+
+.advanteges-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.advanteges-item {
+    height: 384px;
+    width: 400px;
+    background: #82B3D3;
+}
+
+.count {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.advanteges-discription {
+    color: #FFFFFF;
+}
+
+.advanteges-item-3 {
+    background: rgba(131, 179, 211, 0.12); 
+    color: #000000;
+}
+
+.advanteges-item-4 {
+    background: rgba(131, 179, 211, 0.2);
+    color: #000000;
+}
+
+.advanteges-item-5 {
+    background: rgba(131, 179, 211, 0.12); 
+    color: #000000;
+}
+
+.services-house {
+    background: rgba(131, 179, 211, 0.12); 
+    color: #000000;
+}
+
+.services-burger {
+    background: #FFFFFF;
+    color: #000000; 
+}
+
+.services-gift {
+    background: rgba(131, 179, 211, 0.12); 
+    color: #000000;
+}
+
+.interest {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.booking {
+    text-align: center;
+}
+
+a[href^="tel:"] {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    color: #000000;
+   
+}
+
+.button {
+    background: #756157;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.want-here {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #756157;
+}
+
+.submission {
+    background: #82B3D3;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 0px 10px 10px 0;
+    text-align: center;
+}
+
+.email {
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.mailing {
+    background-image: url("../images/background-footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.hotels-sedona {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;  
+    color: #FFFFFF;
+}
+
+.product-card-basket {
+    width: 140px;
+    background: #82B3D3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.mailing-discription {  
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.rate {
+    background: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-left: auto;
+}
+
+.reset {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: none;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;   
+}
+
+.product-card-price, .hotel-on-the-page {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;  
+    color: #FFFFFF;
+}
+
+.pagination-link, .pagination-show-more {
+    background: #82B3D3;
+    border: 1px solid #82B3D3;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.page-footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    width: 142px;
+    margin-right: 196px
+}
+
+.linkses {
+    margin-right: 13px;
+}
+
+.link-html-academy {
+    margin-left: auto;
+}
+
+.product-list {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-right: 58px;
+}
+
+.resoult {
+    width: 700px;
+  
+}
+
+.select-control {
+    width: 287px;  
+    margin-left: 191px;
+}
+
+.sort {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    width: 160px;
+    margin-left: 81px;
+}
+
+.product-card-information {
+    width: 140px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.container-pagination {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    margin-right: 300px;
+}
