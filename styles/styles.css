@@ -14,12 +14,26 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
+    width: 100%;
     background-color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 .navigation-link {
@@ -42,11 +56,81 @@ body {
     background-size: 100% auto;
 }
 
+.main-container {
+    display: flex;
+
+    flex-grow: 1;
+}
+
+.container-header {
+    display: inline;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navigation {
+    width: 390px;
+}
+
+.menu-user {
+    width: 264px;
+    margin-left: auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-img, .logo-img {
+    display: block;
+    margin: 0 auto;
+}
+
 .footer-picture {
+    
     background-size: 100% auto;
 }
 
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:#000000;
+}
+
 .advanteges-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.description-1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description-2 {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
     text-align: center;
 }
 
@@ -58,6 +142,8 @@ body {
 }
 
 .advanteges-item {
+    height: 384px;
+    width: 400px;
     background: #82B3D3;
 }
 
@@ -87,17 +173,17 @@ body {
     color: #000000;
 }
 
-.services-item-house {
+.services-house {
     background: rgba(131, 179, 211, 0.12); 
     color: #000000;
 }
 
-.services-item-burger {
+.services-burger {
     background: #FFFFFF;
     color: #000000; 
 }
 
-.services-item-gift {
+.services-gift {
     background: rgba(131, 179, 211, 0.12); 
     color: #000000;
 }
@@ -107,6 +193,8 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 .booking {
@@ -121,6 +209,7 @@ a[href^="tel:"] {
     text-transform: uppercase;
     text-decoration-line: none;
     color: #000000;
+   
 }
 
 .button {
@@ -149,11 +238,14 @@ a[href^="tel:"] {
     line-height: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    border-radius: 0px 10px 10px 0;
+    text-align: center;
 }
 
 .email {
     font-size: 18px;
     line-height: 21px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .mailing {
@@ -170,11 +262,19 @@ a[href^="tel:"] {
 }
 
 .product-card-basket {
+    width: 140px;
     background: #82B3D3;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.mailing-discription {  
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -184,10 +284,11 @@ a[href^="tel:"] {
     line-height: 20px;
     text-transform: uppercase;
     color: #333333;
+    margin-left: auto;
 }
 
 .reset {
-    font-family: 'PT Sans' sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -227,4 +328,73 @@ a[href^="tel:"] {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.page-footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    width: 142px;
+    margin-right: 196px
+}
+
+.linkses {
+    margin-right: 13px;
+}
+
+.link-html-academy {
+    margin-left: auto;
+}
+
+.product-list {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-right: 58px;
+}
+
+.resoult {
+    width: 700px;
+}
+
+.select-control {
+    width: 287px;  
+    margin-left: 191px;
+}
+
+.sort {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    width: 160px;
+    margin-left: 81px;
+}
+
+.product-card-information {
+    width: 140px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.container-pagination {
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    margin-right: 300px;
 }
