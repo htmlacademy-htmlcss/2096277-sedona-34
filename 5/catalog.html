@@ -13,7 +13,7 @@
                 <a class="navigation-logo" href="index.html">
                     <img class="page-header-logo" alt="Логотип Седоны" src="images/logo.svg" width="139" height="70">
                 </a>
-                <ul class="main-menu" type="none">
+                <ul class="main-menu">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="index.html">Главная</a>
                     </li>
@@ -24,22 +24,20 @@
                         <a class="navigation-link navigation-link-current" href="catalog.html">Гостинницы</a>
                     </li>
                 </ul>
-                <ul class="main-menu menu-user" type="none">
+                <ul class="main-menu menu-user">
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
                             
-                            <img class="search" alt="Поиск" src="images/search.svg" width:18px height:18px>
+                            <img class="search" alt="Поиск" src="images/search.svg">
                         </a>
                     </li>
                     <li class="main-menu-item">
                         <a class="navigation-link" href="#">
-                            <img class="basket" alt="сердечко" src="images/favorite.svg" width:18px height:17px>
+                            <img class="basket" alt="сердечко" src="images/favorite.svg">
                         </a>
                     </li>
                     <li class="main-menu-item">
-                        <a class="navigation-link" href="#">
-                            <button class="want-here">Хочу сюда!</button>  
-                        </a>
+                            <button class="want-here">Хочу сюда!</button>      
                     </li>
                 </ul>
             </nav>
@@ -47,7 +45,7 @@
 <main class="main-inner">
     <header class="page-header-catalog">
         <h1 class="hotels-sedona">Гостиницы Седоны</h1>
-     <div class="breadcrumbs">
+     <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
        <a class="breadcrumbs-link" href="index.html">
         <img class="breadcrumbers" src="images/breadcrumbers.svg" alt="хлебные крошки">
@@ -58,7 +56,7 @@
                 Гостинницы
             </a>
             </li>
-        </div>
+        </ul>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-infrastructure">
                    <legend class="catalog-filter-title">
@@ -123,13 +121,13 @@
             </select>
             <div class="buttons">
             <a href="#" class="button-black">
-                <img class="mini-table" src="images/table.svg" width: 48px height: 48px alt="показать карточки">
+                <img class="mini-table" src="images/table.svg" width="48" height="48" alt="показать карточки">
             </a>
             <a href="#" class="button-monitor">
-                <img class="monitor" src="images/monitor.svg" width: 48px height: 48px alt="показать экран">
+                <img class="monitor" src="images/monitor.svg" width="48" height="48" alt="показать экран">
             </a>
             <a href="#" class="button-list">
-                <img class="mini-list" src="images/mini-list.svg" width: 48px height: 48px alt="показать список">
+                <img class="mini-list" src="images/mini-list.svg" width="48" height="48" alt="показать список">
             </a>
         </div>
         </div>
@@ -170,7 +168,7 @@
             </li>
             <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-third.jpg" width="300" height="211"alt="звездное небо через горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-third.jpg" width="300" height="211" alt="звездное небо через горы">
                     <h3 class="product-card-title">Desert Quail Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 2500 р</b>
@@ -187,7 +185,7 @@
             </li>
             <li class="product-card card-fourth">
                 <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="images/hoteles/hotel-fourth.jpg" width: 300px height: 211px alt="звездное небо сквозь горы">
+                    <img class="product-card-img" src="images/hoteles/hotel-fourth.jpg" width="300" height="211" alt="звездное небо сквозь горы">
                     <h3 class="product-card-title">GreenTree Inn</h3>
                 </a>
                 <b class="product-card-price">гостинница от 1500 р</b>
@@ -224,7 +222,7 @@
                     <a class="pagination-link" href="#">10</a>
                 </li>
             </ul>
-            
+            </div>
             <section class="hotel-on-page">
                 <h4 class="hotel-on-the-page">Гостинниц на странице</h4>
             <select name="card-on-page" multiple size="1"> 
@@ -237,7 +235,6 @@
                 <option>10</option>
                 <option>11</option>
             </select>
-        </div>
             </section>
             <section class="booking">
                 <h4 class="interest">Заинтересовались?</h4>
@@ -256,10 +253,8 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
               <input type="email" name="mail" value="Ваш Email" class="email">
               <button type="submit" value="Подписаться на рассылку" class="submission">Подписаться</button>
-            </label>
         </form>
         </section>
-    
 </main>
         <footer class="page-footer">
             <ul class="links">
