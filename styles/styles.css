@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,10 +7,26 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -108,7 +124,7 @@ body {
   margin-right: 34px;
   flex-wrap: wrap;
   padding: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -181,6 +197,7 @@ body {
   line-height: 21px;
   color: #FFFFFF;
 }
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -340,6 +357,7 @@ body {
   color: #000000;
   text-align: center;
 }
+
 .interest {
   margin-top: 33px;
   margin-bottom: 29px;
