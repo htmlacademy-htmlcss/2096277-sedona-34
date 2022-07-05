@@ -66,7 +66,8 @@ body {
 .page-header-catalog {
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  padding-top: 35px;
+  background-size: cover;
 }
 
 .main-container {
@@ -194,6 +195,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .description-1 {
@@ -212,7 +214,7 @@ body {
 }
 
 .services-discription {
-  padding: 0;
+  padding-top: 30px;
   margin: 0;
   font-size: 18px;
   line-height: 21px;
@@ -237,10 +239,7 @@ body {
 }
 
 .advantages-item {
-  padding-top: 92px;
-  padding-bottom: 92px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 92px 85px 92px 85px;
   max-width: 230px;
   max-height: 200px;
   background: #82B3D3;
@@ -267,7 +266,9 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin-top: 0;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .count-3,
@@ -277,14 +278,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding-top: 30px;
   color: #000000;
 }
 
 .advantages-item-3 {
-  padding-top: 103px;
-  padding-bottom: 102px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 103px 85px 102px 85px;
   max-width: 230px;
   max-height: 179px;
   background: rgba(131, 179, 211, 0.12);
@@ -292,20 +291,23 @@ body {
 }
 
 .advantages-item-4 {
+  padding: 103px 85px 102px 85px;
+  max-width: 230px;
+  max-height: 179px;
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
 }
 
 .advantages-item-5 {
+  padding: 103px 85px 102px 85px;
+  max-width: 230px;
+  max-height: 179px;
   background: rgba(131, 179, 211, 0.12);
   color: #000000;
 }
 
 .services-house {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 80px 85px 80px 85px;
   max-width: 230px;
   max-height: 223px;
   background: rgba(131, 179, 211, 0.12);
@@ -313,20 +315,15 @@ body {
 }
 
 .services-burger {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 80px 85px 80px 85px;
   max-width: 230px;
   max-height: 223px;
   background: #FFFFFF;
   color: #000000;
 }
 
-.services-gift {  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 85px;
-  padding-right: 85px;
+.services-gift {
+  padding: 80px 85px 80px 85px;
   max-width: 230px;
   max-height: 223px;
   background: rgba(131, 179, 211, 0.12);
@@ -380,23 +377,58 @@ a[href^="tel:"] {
 }
 
 .button {
+  width: 574px;
+  height: 60px;
   background: #756157;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  border-radius: 10px 10px 10px 10px;
   text-decoration: none;
   color: #FFFFFF;
 }
 
 .catalog-filter {
+  width: 1060px;
   display: flex;
+  height: 150px;
+  padding: 40px 70px 70px 70px;
+}
+
+.infrostructure-housing {
+  display: flex;
+  width: 356px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-infrastructure {
+  justify-content: start;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  border: 0;
+}
+
+.catalog-infrastructure-item {
+  margin-bottom: 15px;
+}
+
+.control-input {
+  margin: 0;
+  padding: 0;
 }
 
 .want-here {
   font-weight: 700;
   font-size: 16px;
+  width: 160px;
+  height: 37px;
   line-height: 20px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 9px 15px;
   text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
@@ -411,12 +443,19 @@ a[href^="tel:"] {
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0;
   text-align: center;
+  width: 200px;
+  height: 60px;
+  margin-left: 0;
+  padding: 15px 12px;
 }
 
 .email {
   font-size: 18px;
   line-height: 21px;
   border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  margin-right: 0;
 }
 
 .mailing {
@@ -442,24 +481,45 @@ a[href^="tel:"] {
 }
 
 .catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
   padding-bottom: 30px;
   margin: 0;
 }
 
 .catalog-infrastructure {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
   max-width: 150px;
   max-height: 150px;
   padding-top: 0;
+  padding-left: 0;
   margin-top: 0;
   justify-content: space-between;
   list-style-type: none;
+  border: 0;
+}
+
+.catalog-housing {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
 }
 
 .catalog-housing-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
   max-width: 150px;
   max-height: 150px;
   padding-top: 0;
   margin-top: 0;
+  padding-bottom: 15px;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -467,18 +527,34 @@ a[href^="tel:"] {
 .apply {
   width: 160px;
   height: 48px;
-  background: #82B3D3;
-border-radius: 4px;
-}
-
-.product-card-basket {
-  width: 140px;
-  background: #82B3D3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 14px 15px;
+  margin-right: 0;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.product-card-basket {
+  display: flex;
+  width: 110px;
+  padding: 9px 15px;
+  margin-bottom: 33px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px 10px 10px 10px;
+  background: #82B3D3;
 }
 
 .card-on-page {
@@ -503,8 +579,10 @@ border-radius: 4px;
 .rate {
   background: #F2F2F2;
   font-size: 16px;
+  padding: 9px 22px;
   line-height: 20px;
   text-transform: uppercase;
+  border-radius: 10px 10px 10px 10px;
   color: #333333;
   margin-left: auto;
 }
@@ -531,12 +609,23 @@ border-radius: 4px;
 }
 
 .product-card-price {
-  margin: 0;
+  display: flex;
+  width: 140px;
   padding: 0;
-  font-weight: 700;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.product-card-cost {
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+
 }
 
 .hotel-on-the-page {
@@ -560,9 +649,13 @@ border-radius: 4px;
   background: #82B3D3;
   border: 1px solid #82B3D3;
   border-radius: 4px;
+  padding: 11px 24px;
+  max-width: 60px;
+  max-height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 10px 10px 10px 10px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
@@ -599,10 +692,11 @@ border-radius: 4px;
 }
 
 .newsletter-form {
-  margin-left: auto;
+  padding-left: 200px;
 }
 
 .product-card {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 300px;
@@ -648,9 +742,20 @@ border-radius: 4px;
 }
 
 .product-card-information {
-  width: 140px;
+  display: flex;
+  margin-bottom: 34px;
+  width: 110px;
   margin-right: 20px;
+  padding: 9px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
+  color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .container-pagination {
@@ -666,12 +771,4 @@ border-radius: 4px;
   margin-right: 270px;
   padding: 0;
   list-style-type: none;
-}
-
-.pagination-item {
-  width: 60px;
-  height: 60px;
-  background: #82B3D3;
-  border: 1px solid #82B3D3;
-  border-radius: 4px;
 }
