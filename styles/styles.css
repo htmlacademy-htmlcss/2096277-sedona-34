@@ -52,6 +52,12 @@ body {
   width: 1200px;
 }
 
+.line {
+  margin-top: 66px;
+  margin-bottom: 30px;
+  padding-left: 73px;
+}
+
 .navigation-logo {
   margin-right: 47px;
 }
@@ -112,6 +118,10 @@ body {
   overflow: hidden;
 }
 
+.main-page {
+  text-decoration: underline;
+}
+
 .main-menu {
   padding-top: 20px;
   width: 390px;
@@ -136,9 +146,17 @@ body {
   width: 390px;
 }
 
+.navigation-link-current {
+  text-decoration: underline;
+}
+
 .menu-user {
   width: 264px;
   margin-left: auto;
+}
+
+.main {
+  text-decoration: underline;
 }
 
 .page-container {
@@ -147,6 +165,7 @@ body {
 }
 
 .welcome {
+  margin-top: 0;
   padding-top: 51px;
   padding-bottom: 11px;
 }
@@ -168,7 +187,7 @@ body {
 
 .footer-picture {
   padding: 0;
-  margin: 0;
+  margin-top: 14px;
   background-size: 100% auto;
 }
 
@@ -192,12 +211,20 @@ body {
 }
 
 .servises-discription {
+  padding-top: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
 }
 
+.servises-discription-black {
+  padding-top: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -213,6 +240,12 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.photo-1-2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 385px;
 }
 
 .description-1 {
@@ -359,13 +392,26 @@ body {
 }
 
 .interest {
-  margin-top: 33px;
-  margin-bottom: 29px;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-align: center;
+}
+
+.interest-catalog {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 29px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
   text-align: center;
 }
 
@@ -397,6 +443,7 @@ a[href^="tel:"] {
 .button {
   width: 574px;
   height: 60px;
+  margin-bottom: 93px;
   background: #756157;
   font-weight: 700;
   font-size: 20px;
@@ -448,38 +495,28 @@ a[href^="tel:"] {
   border-radius: 10px 10px 10px 10px;
   padding: 9px 15px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #FFFFFF;
   background: #756157;
 }
 
-.submission {
-  background: #82B3D3;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 0px 10px 10px 0;
-  text-align: center;
-  width: 200px;
-  height: 60px;
-  margin-left: 0;
-  padding: 15px 12px;
-}
 
-.email {
-  font-size: 18px;
-  line-height: 21px;
-  border-radius: 10px 0px 0px 10px;
-  width: 600px;
-  height: 60px;
-  margin-right: 0;
-}
+
+
 
 .mailing {
+  width: 1200px;
+  height: 411px;
   background-image: url("../images/background-footer.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin: 0;
+}
+
+.mailing-catalog {
+  width: 1200px;
+  height: 411px;
+    margin: 0;
 }
 
 .hotels-sedona {
@@ -493,9 +530,41 @@ a[href^="tel:"] {
 
 .breadcrumbs {
   display: flex;
-  margin-left: 10px;
-  padding-top: 0;
+  margin-left: 72px;
+  padding-left: 0;
+  padding-top: 10px;
   margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.price-table {
+  width: 288px;
+  margin-top: 34px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  margin-left: 168px;
+}
+
+td {
+  width: 194px;
+  border-right: 2px solid #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+td:nth-child(2n) {
+  border-right: 0;
+}
+
+.price-ruble {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-left: 168px;
+  text-transform: capitalize;
+  color: #FFFFFF;
 }
 
 .catalog-filter-title {
@@ -505,6 +574,10 @@ a[href^="tel:"] {
   color: #FFFFFF;
   padding-bottom: 30px;
   margin: 0;
+}
+
+.type-housing {
+  padding-left: 70px;
 }
 
 .catalog-infrastructure {
@@ -519,6 +592,11 @@ a[href^="tel:"] {
   margin-top: 0;
   justify-content: space-between;
   list-style-type: none;
+  border: 0;
+}
+
+.apply-reset {
+  margin-top: 60px;
   border: 0;
 }
 
@@ -542,6 +620,12 @@ a[href^="tel:"] {
   list-style-type: none;
 }
 
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .apply {
   width: 160px;
   height: 48px;
@@ -554,7 +638,10 @@ a[href^="tel:"] {
   color: #FFFFFF;
   padding: 14px 15px;
   margin-right: 0;
+  margin-left: 100px;
+  margin-top: 60px;
   background: #82B3D3;
+  border: 0;
   border-radius: 4px;
 }
 
@@ -562,7 +649,7 @@ a[href^="tel:"] {
   display: flex;
   width: 110px;
   padding: 9px 15px;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -575,23 +662,53 @@ a[href^="tel:"] {
   background: #82B3D3;
 }
 
-.card-on-page {
+.product-card-information {
   display: flex;
+  margin-bottom: 16px;
+  width: 110px;
+  margin-right: 20px;
+  padding: 9px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card-on-page {
   width: 160px;
   height: 49px;
   font-weight: 400;
   font-size: 18px;
+  border: 1mm solid;
+  border-color: #E5E5E5;
+  border-radius: 10px 10px 10px 10px;
   line-height: 21px;
-  padding-top: 14px;
   padding-left: 20px;
-  padding-bottom: 14px;
 }
 
 .mailing-discription {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.mailing-discription-catalog {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
 }
 
 .rate {
@@ -610,8 +727,11 @@ a[href^="tel:"] {
   height: 20px;
   font-size: 16px;
   line-height: 20px;
+  margin-left: 100px;
   color: #FFFFFF;
   background: none;
+  padding: 0;
+  border: 0;
 }
 
 .product-card-title {
@@ -619,11 +739,9 @@ a[href^="tel:"] {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  text-transform: none;
   text-decoration: none;
-}
-
-.hotel-on-page {
-  display: flex;
+  text-emphasis: none;
 }
 
 .product-card-price {
@@ -634,6 +752,14 @@ a[href^="tel:"] {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.price {
+  border: 0;
 }
 
 .product-card-cost {
@@ -647,9 +773,8 @@ a[href^="tel:"] {
 }
 
 .hotel-on-the-page {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 51px;
-  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -707,10 +832,43 @@ a[href^="tel:"] {
   width: 1200px;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .newsletter-form {
-  padding-left: 200px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-top: 46px;
+  border: 0;
+}
+
+.email {
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  border: 0;
+  margin: 0;
+  padding-right: 0;
+}
+
+.submission {
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  margin: 0;
+  padding: 12px 15px;
 }
 
 .product-card {
@@ -719,6 +877,7 @@ a[href^="tel:"] {
   flex-wrap: wrap;
   width: 300px;
   margin-right: 58px;
+  margin-bottom: 0;
 }
 
 .resoult {
@@ -742,6 +901,9 @@ a[href^="tel:"] {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  border: 1mm solid;
+  border-color: #E5E5E5;
+  border-radius: 10px 10px 10px 10px;
   width: 287px;
   margin-top: 64px;
   margin-left: 0;
@@ -759,22 +921,7 @@ a[href^="tel:"] {
   margin-top: 55px;
 }
 
-.product-card-information {
-  display: flex;
-  margin-bottom: 34px;
-  width: 110px;
-  margin-right: 20px;
-  padding: 9px 15px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  border-radius: 10px 10px 10px 10px;
-  background-color: #756157;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+
 
 .container-pagination {
   display: flex;

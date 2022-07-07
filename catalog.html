@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Каталог</title>
 </head>
-
 <body>
   <div class="container">
     <header class="header-navigation">
@@ -85,22 +83,22 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-infrastructure">
-            <legend class="catalog-filter-title">
+            <legend class="catalog-filter-title type-housing">
               Тип жилья:
             </legend>
             <ul class="catalog-housing">
-              <li class="catalog-housing-item"><label class="control">
+              <li class="catalog-housing-item type-housing"><label class="control">
                   <input class="control-input" type="radio" name="housing" checked>
                   Гостинница
                 </label>
               </li>
-              <li class="catalog-housing-item">
+              <li class="catalog-housing-item type-housing">
                 <label class="control">
                   <input class="control-input" type="radio" name="housing">
                   Мотель
                 </label>
               </li>
-              <li class="catalog-housing-item">
+              <li class="catalog-housing-item type-housing">
                 <label class="control">
                   <input class="control-input" type="radio" name="housing">
                   Апартаменты
@@ -109,10 +107,18 @@
             </ul>
           </fieldset>
         </div>
-          <fieldset>
-            <span>
+        <fieldset class="price">
+        <span class="price-ruble">
               Стоимость,₽:
             </span>
+            <table class="price-table">
+              <tr>
+                <td>0</td>
+                <td>9000</td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset сlass="apply-reset">
           <button class="apply" type="submit">
             Применить
           </button>
@@ -219,6 +225,7 @@
           <span class="rate">Рейтинг:5,0</span>
         </li>
       </ul>
+      <img class="line" alt="линия" src="images/line.svg">
       <div class="container-pagination">
         <ul class="pagination">
           <li class="pagination-item">
@@ -240,9 +247,8 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <section class="hotel-on-page">
         <h4 class="hotel-on-the-page">Гостинниц на странице</h4>
-        <select class="card-on-page" name="card-on-page" multiple size="1">
+        <select class="card-on-page" aria-label="Сортировка">
           <option>4</option>
           <option>5</option>
           <option>6</option>
@@ -252,11 +258,10 @@
           <option>10</option>
           <option>11</option>
         </select>
-      </section>
       </div>
-      <section class="mailing">
-        <h5 class="interest">Подпишитесь на рассылку</h5>
-        <p class="mailing-discription">
+      <section class="mailing-catalog">
+        <h5 class="interest-catalog">Подпишитесь на рассылку</h5>
+        <p class="mailing-discription-catalog">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
