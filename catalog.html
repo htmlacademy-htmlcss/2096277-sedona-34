@@ -49,6 +49,9 @@
             <a class="breadcrumbs-link" href="index.html">
               <img class="breadcrumbers" src="images/breadcrumbers.svg" alt="хлебные крошки">
             </a>
+            <a class="breadcrumbs-link" href="index.html">
+              <img class="breadcrumbers arrow" src="images/arrow.svg" alt="хлебные крошки">
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">
@@ -108,16 +111,28 @@
           </fieldset>
         </div>
         <fieldset class="price">
-        <span class="price-ruble">
-              Стоимость,₽:
-            </span>
-            <table class="price-table">
-              <tr>
-                <td>0</td>
-                <td>9000</td>
-              </tr>
-            </table>
-          </fieldset>
+          <legend class="price-ruble">Стоимость, Р:</legend>
+          <div class="from-and-to">
+            <label class="filter-range range-min">
+              <input class="range-input" type="text" value="0" name="min-price">
+              <span class="range-title">от</span>
+            </label>
+            <label class="filter-range range-max">
+              <input class="range-input" type="text" value="9000" name="max-price">
+              <span class="range-title">до</span>
+            </label>
+          </div>
+          <div class="range-scale">
+            <div class="range-bar">
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
           <fieldset>
           <button class="apply" type="submit">
             Применить
@@ -249,14 +264,14 @@
         </ul>
         <h4 class="hotel-on-the-page">Гостинниц на странице</h4>
         <select class="card-on-page" aria-label="Сортировка">
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
         </select>
       </div>
       <section class="mailing-catalog">
@@ -297,5 +312,61 @@
       </a>
     </footer>
   </div>
+  <!--<div class="modal-container modal-container-close">
+    <div class="modal modal-booking">
+      <button class="modal-close-button" type="button">
+        <svg class="modal-close-cross" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="booking-date" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="date-from" for="booking-date-from">Дата Заезда:</label>
+              <input class="date-form-field" required type="text" id="booking-date-from" name="booking-date-from" placeholder="27 апреля 2020">
+          </p>
+          <span class="modal-message-warning">Мы не можем отправить вас в прошлое.</span>
+          <p class="field-group">
+            <label class="date-to" for="booking-date-to">Дата Выезда:</label>
+              <input class="date-form-field" required type="text" id="booking-date-to" name="booking-date-to" placeholder="1 сентября 2021">
+          </p>
+          <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+          <p class="field-group">
+            <label class="people-counter-adult" for="people-counter-from-adults">Взрослые:</label>
+            <button class="people-counter-button minus-adults" type="button">
+              <span class="visually-hidden">Уменьшить количество взрослых.</span>
+              <svg class="modal-counter-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            </button>
+            <input class="people-counter-form-field" required type="number" id="people-counter-from-adults" name="people-counter-from-adults"
+              placeholder="2">
+            <button class="people-counter-button plus-adults" type="button">
+              <span class="visually-hidden">Увеличить количество взрослых.</span>
+              <svg class="modal-counter-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            </button>
+            <span class="people-counter-children">
+              <label class="people-counter-children" for="people-counter-from-children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+            </span>
+            <button class="people-counter-button minus-children" type="button">
+              <span class="visually-hidden">Уменьшить количество детей.</span>
+              <svg class="modal-counter-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            </button>
+            <input class="people-counter-form-field" required type="number" id="people-counter-from-children" name="people-counter-from-children"
+              placeholder="1">
+            <button class="people-counter-button plus-children" type="button">
+              <span class="visually-hidden">Увеличить количество детей.</span>
+              <svg class="modal-counter-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            </button>
+          </p>
+          <button class="button modal-search-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>-->
 </body>
 </html>
